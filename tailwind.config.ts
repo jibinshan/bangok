@@ -8,8 +8,9 @@ export default {
     extend: {
       fontFamily: {
         manrope: ["var(--font-manrope)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
         playfair: ["var(--font-playfair)", ...fontFamily.sans],
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -17,6 +18,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        line: "rgba(216, 181, 107, 0.12)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -31,6 +33,11 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        montserrat: {
+          DEFAULT: "hsl(var(--montserrat))",
+          foreground: "hsl(var(--montserrat-foreground))",
+        },
+
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

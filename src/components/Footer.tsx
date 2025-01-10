@@ -5,134 +5,155 @@ import Link from "next/link";
 
 const Footer = ({}) => {
   return (
-    <footer className="z-50 flex h-full w-full items-center justify-center bg-[#131313] px-2 py-[8.75rem]">
-      <div className="flex h-full w-full max-w-[1300px] flex-col gap-10 lg:flex-row">
-        <div className="flex w-full flex-col px-4 lg:w-1/2">
-          <h1 className="max-w-[500px] font-playfair text-7xl">
-            Subscribe to our newsletter
-          </h1>
-          <div className="flex w-full flex-col justify-between pt-[7.81rem] md:flex-row">
-            <div className="flex flex-col">
-              <Button
-                variant="link"
-                className="w-fit items-center justify-start px-0 py-0 text-start text-accent"
-              >
-                <Link href="/menu">Menu</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="w-fit items-center justify-start px-0 py-0 text-start text-accent"
-              >
-                <Link href="/about-us">About Us</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="w-fit items-center justify-start px-0 py-0 text-start text-accent"
-              >
-                <Link href="/contact">Contact Us</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="w-fit items-center justify-start px-0 py-0 text-start text-accent"
-              >
-                <Link href="/table-booking">Table Booking</Link>
-              </Button>
-              <Button
-                variant="link"
-                className="w-fit items-center justify-start px-0 py-0 text-start text-accent"
-              >
-                <Link href="/gift-voucher">Gift Voucher</Link>
-              </Button>
-            </div>
-            <div className="flex flex-col gap-[1.38rem]">
-              <h3 className="font-bold uppercase">Contact</h3>
-              <Link href="tel:441539733733">
-                <p>+441539733733</p>
-              </Link>
-              <Link href="mailto:info@bangkok.co.uk">
-                <p>info@bangkok.co.uk</p>
-              </Link>
-              <Link href="https://maps.app.goo.gl/cQSqpbwsCze8TgcF7">
-                <p>24 Finkle St, Kendal LA9 4AB, United Kingdom</p>
-              </Link>
-            </div>
-          </div>
-          <div className="flex w-full justify-end pt-[1.22rem]">
+    <footer className="flex h-full w-full flex-col items-center justify-center gap-12 bg-black px-2 pt-12">
+      <div className="flex w-full max-w-[1300px] flex-col items-center gap-4 md:gap-12">
+        <div className="flex w-full flex-col items-center justify-center gap-2 md:mt-10 md:w-1/3">
+          <Image src="/images/logo.png" width={180} height={158} alt="logo" />
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/3 md:flex-row md:gap-20">
             <Button
-              variant="ghost"
+              variant="link"
+              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2] text-accent"
               asChild
-              className="px-1 py-1 hover:bg-transparent"
             >
-              <Link href="https://www.instagram.com/bavettesteakhouse/">
-                <span className="sr-only">Instagram</span>
-                <Icons.instagram />
-              </Link>
+              <Link href="/about-us">Menu</Link>
             </Button>
             <Button
-              variant="ghost"
+              variant="link"
+              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
-              className="px-1 py-1 hover:bg-transparent"
             >
-              <Link href="https://www.tripadvisor.com/Restaurant_Review-g186337-d23660134-Reviews-or30-Bavette_Steak_House_Liverpool-Liverpool_Merseyside_England.html">
-                <span className="sr-only">Trip Advisor</span>
-                <Icons.tripAdvisor />
-              </Link>
+              <Link href="/contact">About</Link>
             </Button>
             <Button
-              variant="ghost"
+              variant="link"
+              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
-              className="px-1 py-1 hover:bg-transparent"
             >
-              <Link href="https://g.co/kgs/3rHehs1">
-                <span className="sr-only">Google</span>
-                <Icons.google />
-              </Link>
+              <Link href="/table-booking">Contact</Link>
             </Button>
             <Button
-              variant="ghost"
+              variant="link"
+              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
-              className="px-1 py-1 hover:bg-transparent"
             >
-              <Link href="https://www.facebook.com/bavettesteakhouse/">
-                <span className="sr-only">Facebook</span>
-                <Icons.facebook />
-              </Link>
+              <Link href="/about-us">Booking</Link>
+            </Button>
+            <Button
+              variant="link"
+              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
+              asChild
+            >
+              <Link href="/about-us">Gift Voucher </Link>
             </Button>
           </div>
         </div>
-        <div className="h-full w-full px-4 lg:w-1/2">
-          <div className="flex w-full flex-col justify-between gap-10 lg:h-[500px]">
-            <div className="flex h-full flex-col gap-10">
-              <p className="max-w-[380px]">
-                By subscribing to the newsletter, you will always be up to date.
-                Find out about new products, events, and specials.
-              </p>
-              <div className="flex flex-col gap-2 lg:flex-row">
-                <input
-                  placeholder="Email"
-                  className="min-w-[300px] border-b border-primary bg-transparent text-[#958B7D] placeholder:text-[#958B7D] active:outline-none active:ring-0"
+      </div>
+
+      <div className="flex w-full flex-col items-center justify-center gap-4">
+        <div className="w-full">
+          <hr className="border-t-1 border-line w-full" />
+        </div>
+        <div className="mt-6 flex flex-col gap-4 md:flex-row md:gap-28">
+          <div className="flex flex-col items-center justify-start gap-3">
+            <span className="font-montserrat text-sm font-[600] uppercase tracking-[1.08px] text-[#fbead2]">
+              Contact
+            </span>
+            <p className="text-center font-manrope text-xs font-[400] text-[#C2B4A0]">
+              0151 245 1500 <br /> Info@bavetteliverpool.co.uk <br /> $9
+              Allerton Rd, Liverpool L25 7RE
+            </p>
+          </div>
+          <hr className="bg-line hidden h-28 w-0.5 md:block" />
+          <div className="relative flex flex-col items-center justify-center">
+            <span className="font-montserrat text-sm font-[600] uppercase tracking-[1.08px] text-[#fbead2]">
+              Location
+            </span>
+            <p className="mt-2 text-center font-manrope text-xs font-[400] text-[#C2B4A0]">
+              45 Deansgate, Manchester, United <br /> Kingdom, M3 2AY.
+            </p>
+            <div className="relative">
+              <div className="absolute left-6 top-9 flex flex-row items-center justify-center gap-4">
+                <Image
+                  src="/images/location.svg"
+                  width={24}
+                  height={24}
+                  alt="logo"
+                  // className="h-4 w-48"
                 />
-                <Button
-                  className="group items-center gap-[1.19rem] border border-accent bg-transparent font-semibold uppercase text-accent hover:border-primary hover:bg-primary hover:text-[#282828]"
-                  variant="secondary"
-                >
-                  Subscribe
-                  <Icons.rightArrow className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-                </Button>
+                <p className="font-montserrat text-xs font-[400] uppercase text-[#D8B56B]">
+                  Find our Location
+                </p>
               </div>
-            </div>
-            <div className="flex w-full flex-col items-end">
               <Image
-                src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
-                width={205}
-                height={68}
+                src="/images/frame.svg"
+                width={321}
+                height={73}
                 alt="logo"
+                className="h-24 w-56"
               />
-              <p className="text-[#64615C]">
-                © 2024 Bangkok liverpool{" "}
-                <Link href="https://foodo.ai">Powered By Foodo</Link>{" "}
-              </p>
             </div>
+          </div>
+          <hr className="bg-line hidden h-28 w-0.5 md:block" />
+          <div className="flex flex-col items-center justify-start gap-3">
+            <span className="font-montserrat text-sm font-[600] uppercase tracking-[1.08px] text-[#fbead2]">
+              Opening Hours
+            </span>
+            <p className="text-center font-manrope text-xs font-[400] text-[#C2B4A0]">
+              Monday–Friday: 8:00 AM – 10:00 PM <br />
+              Saturday–Sunday: 9:00 AM – 11:00 PM
+            </p>
+          </div>{" "}
+        </div>
+        <div className="flex w-full flex-row items-center justify-center gap-4 md:w-1/3">
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/insta.svg"
+              alt="insta"
+              width={41}
+              height={42}
+              className="cursor-pointer"
+            />
+          </Link>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/site.svg"
+              alt="site"
+              width={33}
+              height={27}
+              className="cursor-pointer"
+            />
+          </Link>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/google.svg"
+              alt="google"
+              width={41}
+              height={42}
+              className="cursor-pointer"
+            />
+          </Link>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/fb.svg"
+              alt="fb"
+              width={42}
+              height={42}
+              className="cursor-pointer"
+            />
+          </Link>
+        </div>
+      </div>
+
+      <div className="flex w-full flex-col items-center justify-center">
+        <div className="w-full">
+          <hr className="border-t-1 border-line w-full" />
+        </div>
+        <div className="flex h-12 w-full flex-row justify-between px-4 py-2 md:px-36">
+          <div>
+            <span className="text-xs">© 2024 Bangkok</span>
+          </div>
+          <div>
+            <span className="text-xs">Powerd by foodo</span>
           </div>
         </div>
       </div>

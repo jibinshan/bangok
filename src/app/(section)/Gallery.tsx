@@ -7,8 +7,10 @@ const Gallery = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] pt-10 md:pt-24">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6">
-        <h3 className="font-playfair uppercase italic">gallery</h3>
-        <h1 className="max-w-[700px] text-center font-playfair text-4xl md:text-7xl">
+        <h3 className="font-montserrat text-center text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+          gallery
+        </h3>
+        <h1 className="font-montserrat text-center text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
           A Glimpse of Bangkok
         </h1>
         <div className="relative mt-4 h-full w-full md:mt-16">
@@ -21,7 +23,7 @@ const Gallery = ({}) => {
           />
           <div className="absolute inset-0 flex items-center justify-center px-4">
             <Button
-              className="gap-[1.19rem] font-playfair text-lg text-white md:text-[1.62rem] lg:px-[4.12rem] lg:py-[2.26rem]"
+              className="gap-[1.19rem] font-playfair text-lg text-white lg:px-[2rem] lg:py-[2.6rem]"
               style={{
                 borderRadius: "10rem",
                 border: "1px solid, #BC995D",

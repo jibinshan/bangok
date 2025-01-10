@@ -15,19 +15,13 @@ const Reviews = ({}) => {
   return (
     <section className="relative flex h-full w-full justify-center bg-[#070707]">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-4 py-12 md:py-44">
-        <div className="flex h-full w-full flex-col items-start justify-center gap-4">
-          <h3 className="font-playfair uppercase italic">Reviews</h3>
-          <h1 className="max-w-[600px] text-center font-playfair text-5xl sm:text-7xl">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-4">
+          <h3 className="font-montserrat font-400 text-center text-sm uppercase tracking-[1.98px] text-[#DCDCDC]">
+            Reviews
+          </h3>
+          <h1 className="font-montserrat mb-6 max-w-[600px] text-center text-5xl font-[400] text-[#FBEAD2] sm:text-6xl md:mb-8">
             Hear Our Guests
           </h1>
-          <div className="relative flex w-full justify-end">
-            <h2 className="invisible font-playfair text-lg text-[#101010]">
-              Google Review
-            </h2>
-            <h2 className="absolute -bottom-10 right-0 font-playfair text-6xl text-[#101010] sm:text-7xl md:text-8xl">
-              Google Review
-            </h2>
-          </div>
         </div>
         <div className="flex w-full items-center justify-center p-4">
           {reviews && (

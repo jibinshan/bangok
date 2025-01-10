@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { Manrope, Montserrat, Playfair_Display } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   keywords:
     "Bangkok, Best steak house Liverpool, beef steak Liverpool, fine dining Liverpool, steak restaurant Woolton Village, Bangkok menu, premium steaks, signature steaks, curated wines, group dining Liverpool",
 };
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -34,6 +40,7 @@ export default function RootLayout({
           "theme-custom flex min-h-screen bg-[#070707] font-manrope text-[#FBEAD2] antialiased",
           manrope.variable,
           playfair.variable,
+          montserrat.variable,
         )}
       >
         <Providers>{children}</Providers>

@@ -7,21 +7,23 @@ const Booking = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center">
       <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 bg-[#131313] md:flex-row">
-        <div className="h-full w-full overflow-hidden p-4 md:w-1/2 md:p-0">
+        <div className="h-full w-full overflow-hidden md:w-1/2">
           <Image
-            src="/images/home/private-dining/groupdining.jpg"
+            src="/images/home/private-dining/dining.png"
             width={948}
             height={880}
             alt="private dining"
-            className="h-auto w-full rounded-lg md:rounded-none"
+            className="h-full w-full rounded-lg md:rounded-none"
           />
         </div>
-        <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
-          <h3 className="font-playfair uppercase italic">Booking</h3>
-          <h1 className="max-w-[500px] text-center font-playfair text-6xl sm:text-7xl md:text-start">
-            Private & Group Dining
+        <div className="flex h-full w-full flex-col items-center gap-3 p-6 md:w-1/2 md:items-start lg:ml-24">
+          <h3 className="font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+            Booking
+          </h3>
+          <h1 className="font-montserrat max-w-[500px] text-center text-5xl font-[400] text-[#FBEAD2] sm:text-6xl md:text-start">
+            Private & <br /> Group Dining
           </h1>
-          <p className="max-w-[450px] text-center font-light leading-[160%] text-[#C1B6A6] md:text-start">
+          <p className="mt-4 max-w-[450px] text-center font-manrope text-sm font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:text-start">
             At Bangkok, we offer exceptional private and group dining
             experiences tailored to your needs, whether it&apos;s an intimate
             celebration or a lively gathering with friends. Enjoy our exquisite
@@ -30,7 +32,7 @@ const Booking = ({}) => {
           </p>
           <Button
             variant="outline"
-            className="group w-fit items-center gap-[1.19rem] border-primary bg-transparent py-7 font-semibold uppercase text-white hover:bg-primary"
+            className="group mt-4 w-fit items-center gap-[1.19rem] rounded-none border-primary bg-transparent py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-white hover:bg-primary"
           >
             <Link
               href="/table-booking"

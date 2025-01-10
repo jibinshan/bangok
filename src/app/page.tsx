@@ -8,6 +8,7 @@ import WeOffer from "@/app/(section)/WeOffer";
 import ViewMenu from "@/components/floating-buttons/ViewMenu";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import AboutUs from "./(section)/AboutUs";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Navbar position="fixed" />
         <Hero />
+        <AboutUs />
         <ExploreMenu />
         <WeOffer />
         <Special />

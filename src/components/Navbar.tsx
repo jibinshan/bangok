@@ -43,18 +43,20 @@ const Navbar = ({
           isScrolled && "max-w-[1300px]",
         )}
       >
-        <div className="flex h-full w-full items-center justify-between">
-          <Link href="/">
-            <Image
-              src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
-              width={198}
-              height={66}
-              alt="logo"
-              className="w-[100px] md:w-[150px]"
-            />
-          </Link>
+        <div className="flex h-full w-full items-center justify-between md:justify-center">
+          {isScrolled && (
+            <Link href="/">
+              <Image
+                src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
+                width={198}
+                height={66}
+                alt="logo"
+                className="mt-8 w-[100px] md:w-[150px]"
+              />
+            </Link>
+          )}
           {!isScrolled && (
-            <div className="hidden flex-row items-center justify-center gap-[3.48rem] md:flex">
+            <div className="hidden flex-row items-center justify-center gap-[5.88rem] md:flex">
               <Button
                 asChild
                 variant="link"
@@ -67,21 +69,32 @@ const Navbar = ({
                 variant="link"
                 className="px-0 uppercase text-accent"
               >
-                <Link href="/about-us">About Us</Link>
+                <Link href="/about-us">About</Link>
               </Button>
               <Button
                 asChild
                 variant="link"
                 className="px-0 uppercase text-accent"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">Contact</Link>
               </Button>
+
+              <Link href="/">
+                <Image
+                  src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
+                  width={198}
+                  height={66}
+                  alt="logo"
+                  className="mt-8 w-[100px] md:w-[150px]"
+                />
+              </Link>
+
               <Button
                 asChild
                 variant="link"
                 className="px-0 uppercase text-accent"
               >
-                <Link href="/table-booking">Table Booking</Link>
+                <Link href="/table-booking">Booking</Link>
               </Button>
               <Button
                 asChild
@@ -89,6 +102,16 @@ const Navbar = ({
                 className="px-0 uppercase text-accent"
               >
                 <Link href="/gift-voucher">Gift Voucher</Link>
+              </Button>
+              <Button
+                className="group items-center gap-[1.19rem] font-semibold uppercase text-[#282828] hover:bg-primary"
+                variant="secondary"
+                asChild
+              >
+                <Link href="/menu">
+                  View Menu
+                  <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
+                </Link>
               </Button>
             </div>
           )}
@@ -106,16 +129,6 @@ const Navbar = ({
                   </Button>
                 </CartSheet>
               )}
-              <Button
-                className="group items-center gap-[1.19rem] font-semibold uppercase text-[#282828] hover:bg-primary"
-                variant="secondary"
-                asChild
-              >
-                <Link href="/menu">
-                  View Menu
-                  <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
-                </Link>
-              </Button>
             </div>
           )}
           {isScrolled ? (

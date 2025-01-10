@@ -48,16 +48,29 @@ const slideData: {
 
 const Special = ({}) => {
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#070707]">
-      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
-        <h3 className="font-playfair uppercase italic">Special</h3>
-        <h1 className="max-w-[600px] text-center font-playfair text-5xl sm:text-7xl">
-          Bangkok Signature Steaks
-        </h1>
-        <p className="max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
+    <section className="relative flex h-full w-full items-center justify-center bg-[#070707] py-32 md:py-24">
+      <div className="relative flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
+        <div className="absolute right-16 top-24 hidden md:block">
+          <p className="font-manrope text-sm font-[300] tracking-[0.54px] text-[#C1B6A6]">
+            Bavette was born from a passion for <br /> bringing the finest cuts
+            of beef to the <br /> table, with a commitment to <br />{" "}
+            sustainability.
+          </p>
+        </div>
+        <div className="absolute -top-32 left-32 md:-top-10">
+          <div className="flex flex-col justify-start">
+            <h3 className="font-montserrat mb-4 text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+              Special
+            </h3>
+            <h1 className="font-montserrat max-w-[600px] text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
+              Bangkok <br /> Signature <br /> Steaks
+            </h1>
+          </div>
+        </div>
+        {/* <p className="max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:px-0">
           Bangkok was born from a passion for bringing the finest cuts of beef
           to the table, with a commitment to sustainability.
-        </p>
+        </p> */}
         <div className="relative z-20 flex min-h-[400px] w-full flex-col justify-center px-2">
           <EmblaCarousel slides={slideData} options={OPTIONS} />
         </div>
