@@ -7,10 +7,10 @@ const Gallery = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] pt-10 md:pt-24">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6">
-        <h3 className="font-montserrat text-center text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+        <h3 className="text-center font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           gallery
         </h3>
-        <h1 className="font-montserrat text-center text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
+        <h1 className="text-center font-montserrat text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
           A Glimpse of Bangkok
         </h1>
         <div className="relative mt-4 h-full w-full md:mt-16">

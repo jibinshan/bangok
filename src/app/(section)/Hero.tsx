@@ -8,7 +8,7 @@ const Hero = ({}) => {
           <video
             className="min-h-full min-w-full object-cover"
             style={{ objectPosition: "30% center" }}
-            src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-banner.mp4"
+            src="/videos/hero.mp4"
             autoPlay
             loop
             muted

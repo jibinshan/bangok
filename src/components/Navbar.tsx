@@ -33,7 +33,7 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-0 z-50 flex w-full max-w-[1300px] justify-center`,
+        `${position} top-0 z-50 flex w-full max-w-[1300px] justify-center md:ml-4`,
         isScrolled && "max-w-full bg-black",
       )}
     >
@@ -56,7 +56,7 @@ const Navbar = ({
             </Link>
           )}
           {!isScrolled && (
-            <div className="hidden flex-row items-center justify-center gap-[5.88rem] md:flex">
+            <div className="hidden flex-row items-center justify-center gap-[5.88rem] md:ml-4 md:mt-8 md:flex">
               <Button
                 asChild
                 variant="link"
@@ -104,13 +104,12 @@ const Navbar = ({
                 <Link href="/gift-voucher">Gift Voucher</Link>
               </Button>
               <Button
-                className="group items-center gap-[1.19rem] font-semibold uppercase text-[#282828] hover:bg-primary"
+                className="group items-center rounded-none bg-primary px-5 py-7 font-montserrat text-sm font-[600] uppercase tracking-[1.86px] text-[#282828] hover:bg-primary"
                 variant="secondary"
                 asChild
               >
-                <Link href="/menu">
+                <Link href="/menu" className="text-sm">
                   View Menu
-                  <Icons.rightArrow className="duration-300 ease-in-out group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>
