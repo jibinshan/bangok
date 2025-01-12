@@ -49,7 +49,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               className="flex w-full justify-start border-b-[1px] border-b-gray-800 p-0 uppercase text-accent text-white"
             >
               <Link href="/about-us" className="flex gap-2 py-6">
-                <ShieldQuestion /> <span>About Us</span>{" "}
+                <ShieldQuestion /> <span>About</span>{" "}
               </Link>
             </Button>
             <Button
@@ -58,7 +58,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               asChild
             >
               <Link href="/contact" className="flex gap-2 py-6">
-                <Phone /> <span>Contact Us</span>
+                <Phone /> <span>Contact</span>
               </Link>
             </Button>
             <Button
@@ -67,7 +67,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               className="flex w-full justify-start border-b-[1px] border-b-gray-800 p-0 px-1 uppercase text-accent text-white"
             >
               <Link href="/table-booking" className="flex gap-2 py-6">
-                <BookCheck /> <span>Table Booking</span>{" "}
+                <BookCheck /> <span>Booking</span>{" "}
               </Link>
             </Button>
             <Button
