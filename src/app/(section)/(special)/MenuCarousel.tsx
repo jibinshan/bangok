@@ -133,7 +133,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               ))}
             </div>
             <div className="flex w-full items-center justify-center pb-12">
-              <p className="min-h-[90px] max-w-[300px] text-center font-playfair text-4xl text-white">
+              <p className="min-h-[90px] max-w-[300px] text-center font-playfair text-4xl font-[400] text-[#FBEAD2]">
                 {slides[selectedIndex]?.name}
               </p>
             </div>

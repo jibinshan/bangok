@@ -8,8 +8,8 @@ const Footer = ({}) => {
     <footer className="flex h-full w-full flex-col items-center justify-center gap-12 bg-black px-2 pt-12">
       <div className="flex w-full max-w-[1300px] flex-col items-center gap-4 md:gap-12">
         <div className="flex w-full flex-col items-center justify-center gap-2 md:mt-10 md:w-1/3">
-          <Image src="/images/logo.png" width={180} height={158} alt="logo" />
-          <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/3 md:flex-row md:gap-20">
+          <Image src="/images/logo.png" width={160} height={148} alt="logo" />
+          <div className="flex w-full flex-col items-center justify-center gap-4 md:mt-8 md:w-1/3 md:flex-row md:gap-20">
             <Button
               variant="link"
               className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2] text-accent"
@@ -104,7 +104,7 @@ const Footer = ({}) => {
             </p>
           </div>{" "}
         </div>
-        <div className="flex w-full flex-row items-center justify-center gap-4 md:mr-6 md:w-1/3">
+        <div className="flex w-full flex-row items-center justify-center gap-4 md:w-1/3">
           <Link href="/your-target-page" passHref>
             <Image
               src="/images/home/footer/insta.svg"
