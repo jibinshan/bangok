@@ -57,13 +57,13 @@ const Special = ({}) => {
             sustainability.
           </p>
         </div>
-        <div className="absolute -top-32 left-32 md:-top-10">
+        <div className="absolute -top-32 left-2 md:-top-10 md:left-32">
           <div className="flex flex-col justify-start">
-            <h3 className="mb-4 font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+            <h3 className="mb-4 text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC] md:text-start">
               Special
             </h3>
-            <h1 className="max-w-[600px] font-montserrat text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
-              Bangkok <br /> Signature <br /> Steaks
+            <h1 className="max-w-[350px] text-center font-montserrat text-4xl font-[400] text-[#FBEAD2] md:text-start md:text-5xl">
+              Bangkok Signature Foods
             </h1>
           </div>
         </div>

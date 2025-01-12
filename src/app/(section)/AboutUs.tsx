@@ -31,9 +31,8 @@ const AboutUs = () => {
         <h3 className="text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           About Us
         </h3>
-        <h1 className="text-center font-montserrat text-3xl font-[400] tracking-[1.48px] text-[#FBEAD2] sm:text-6xl">
-          Welcome to Bangkok. <br />A steakhouse experience. <br />A doorway to
-          perfection.
+        <h1 className="max-w-[650px] text-center font-montserrat text-2xl font-[400] tracking-[1.48px] text-[#FBEAD2] sm:text-5xl">
+          Welcome to Bangkok.A steakhouse experience.A doorway to perfection.
         </h1>
         <Button
           variant="outline"

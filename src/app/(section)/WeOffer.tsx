@@ -10,11 +10,11 @@ const WeOffer = ({}) => {
         <h1 className="max-w-[600px] text-center font-montserrat text-4xl font-[400] tracking-[-1.48px] text-[#FBEAD2] md:text-6xl">
           Unforgettable Dining Experience
         </h1>
-        <p className="mt-6 px-2 text-center font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
-          Bavette was born from a passion for bringing the finest <br /> cuts of
-          beef to the table, with a commitment to sustainability and <br />{" "}
-          premium quality. Every dish is a labor of love, crafted by our
-          experienced <br /> chefs who handpick each cut to ensure perfection.
+        <p className="mt-6 max-w-[600px] px-2 text-center font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
+          Bavette was born from a passion for bringing the finest cuts of beef
+          to the table, with a commitment to sustainability and premium quality.
+          Every dish is a labor of love, crafted by our experienced chefs who
+          handpick each cut to ensure perfection.
         </p>
         <div className="grid-cols- grid w-full pt-4 md:grid-cols-3 md:pt-[8.3rem]">
           <div className="group relative h-auto w-full transition-all duration-300 ease-in-out">

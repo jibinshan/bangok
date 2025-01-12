@@ -6,7 +6,7 @@ import Link from "next/link";
 const ExploreMenu = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#131313] px-4 md:px-12">
-      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-44">
+      <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-16 md:py-44">
         <h3 className="mb-10 text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           explore menu
         </h3>
@@ -20,7 +20,7 @@ const ExploreMenu = ({}) => {
               width={435}
               height={319}
               alt="1"
-              className="h-auto w-full max-w-[400px] md:h-[290px]"
+              className="h-[250px] w-full max-w-[400px] object-cover md:h-[290px]"
             />
           </div>
           <div className="z-10 flex h-full w-full justify-center md:w-1/3">
@@ -29,7 +29,7 @@ const ExploreMenu = ({}) => {
               width={365}
               height={495}
               alt="1"
-              className="h-auto w-full max-w-[400px] object-cover md:h-[520px]"
+              className="h-[250px] w-full max-w-[400px] object-cover md:h-[520px]"
             />
           </div>
           <div className="z-10 mt-0 flex h-full w-full justify-center md:mt-40 md:w-1/3">
@@ -38,19 +38,18 @@ const ExploreMenu = ({}) => {
               width={439}
               height={320}
               alt="1"
-              className="h-auto w-full max-w-[400px] object-cover md:h-[290px]"
+              className="h-[250px] w-full max-w-[400px] object-cover md:h-[290px]"
             />
           </div>
-          <h2 className="absolute -bottom-5 right-[25%] z-20 font-montserrat text-8xl font-[400] text-[#FBF5DC] md:text-9xl">
+          <h2 className="absolute -bottom-5 right-[25%] z-20 hidden font-montserrat text-8xl font-[400] text-[#FBF5DC] md:block md:text-9xl">
             Menu
           </h2>
         </div>
-        <p className="px-2 text-center font-manrope font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
-          Bangkok was born from a love of bringing the <br /> finest cuts of
-          beef to London’s table, rooted in a commitment to sustainability{" "}
-          <br /> and unmatched quality. Each dish is a true labor of passion,
-          crafted by our <br /> expert chefs who hand-select every cut to
-          guarantee perfection.
+        <p className="max-w-[600px] px-2 text-center font-manrope font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
+          Bangkok was born from a love of bringing the finest cuts of beef to
+          London’s table, rooted in a commitment to sustainability and unmatched
+          quality. Each dish is a true labor of passion, crafted by our expert
+          chefs who hand-select every cut to guarantee perfection.
         </p>
         <Button
           variant="outline"
