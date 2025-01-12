@@ -48,10 +48,10 @@ const slideData: {
 
 const Special = ({}) => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center bg-[#070707] py-32 md:py-24">
+    <section className="relative flex h-full w-full items-center justify-center bg-[#070707] px-4 py-32 md:px-12 md:py-24">
       <div className="relative flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
         <div className="absolute right-16 top-24 hidden md:block">
-          <p className="font-manrope text-sm font-[300] tracking-[0.54px] text-[#C1B6A6]">
+          <p className="font-manrope text-base font-[300] tracking-[0.54px] text-[#C1B6A6]">
             Bavette was born from a passion for <br /> bringing the finest cuts
             of beef to the <br /> table, with a commitment to <br />{" "}
             sustainability.
@@ -59,10 +59,10 @@ const Special = ({}) => {
         </div>
         <div className="absolute -top-32 left-32 md:-top-10">
           <div className="flex flex-col justify-start">
-            <h3 className="font-montserrat mb-4 text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+            <h3 className="mb-4 font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
               Special
             </h3>
-            <h1 className="font-montserrat max-w-[600px] text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
+            <h1 className="max-w-[600px] font-montserrat text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
               Bangkok <br /> Signature <br /> Steaks
             </h1>
           </div>

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const WeOffer = ({}) => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center bg-[#070707]">
+    <section className="relative flex h-full w-full items-center justify-center bg-[#070707] px-4 md:px-12">
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 py-8 md:py-24">
-        <h3 className="text-center font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+        <h3 className="text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           we offer
         </h3>
         <h1 className="max-w-[600px] text-center font-montserrat text-4xl font-[400] tracking-[-1.48px] text-[#FBEAD2] md:text-6xl">

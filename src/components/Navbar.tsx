@@ -33,18 +33,18 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-0 z-50 flex w-full px-4 md:px-[130px] justify-center items-center md:ml-4`,
+        `${position} top-0 z-50 flex w-full items-center justify-center px-4 lg:ml-4 lg:px-[130px] lg:pb-5`,
         isScrolled && "bg-black",
-        pathname !== "/" && "bg-black"
+        pathname !== "/" && "bg-black",
       )}
     >
-      <Link href="/" className="flex md:hidden">
+      <Link href="/" className="flex lg:hidden">
         <Image
           src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
           width={160}
           height={100}
           alt="logo"
-          className="w-28"
+          className="h-20 w-32"
         />
       </Link>
       <div
@@ -53,9 +53,8 @@ const Navbar = ({
           isScrolled && "max-w-[1300px]",
         )}
       >
-        <div className="flex h-full w-full items-center justify-between md:justify-end">
-
-          <div className="hidden flex-row items-center justify-center gap-[5.88rem] md:mt-8 md:flex">
+        <div className="flex h-full w-full items-center justify-between lg:justify-center xl:ml-36">
+          <div className="hidden flex-row items-center justify-center gap-[3.80rem] lg:mt-8 lg:flex 2xl:gap-[5.88rem]">
             <Button
               asChild
               variant="link"
@@ -84,7 +83,7 @@ const Navbar = ({
                 width={160}
                 height={100}
                 alt="logo"
-                className="w-28"
+                className="h-20 w-32"
               />
             </Link>
 
@@ -98,7 +97,7 @@ const Navbar = ({
             <Button
               asChild
               variant="link"
-              className="px-0 uppercase text-accent flex justify-center items-start"
+              className="flex items-start justify-center px-0 uppercase text-accent"
             >
               <Link href="/gift-voucher">Gift Voucher</Link>
             </Button>
@@ -113,7 +112,7 @@ const Navbar = ({
             </Button>
           </div>
           {isScrolled && (
-            <div className="hidden items-center justify-center gap-[2.5rem] md:flex">
+            <div className="hidden items-center justify-center gap-[2.5rem] lg:flex">
               {pathname !== "/" && (
                 <CartSheet>
                   <Button
@@ -130,7 +129,7 @@ const Navbar = ({
           )}
         </div>
       </div>
-      <div className="flex md:hidden">
+      <div className="flex lg:hidden">
         {isScrolled ? (
           <Sidebar>
             <Button
@@ -145,7 +144,7 @@ const Navbar = ({
           <Sidebar>
             <Button
               variant="ghost"
-              className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary md:hidden"
+              className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary lg:hidden"
             >
               <span className="sr-only">Menu</span>
               <Icons.menu />

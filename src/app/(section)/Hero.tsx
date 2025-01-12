@@ -18,7 +18,7 @@ const Hero = ({}) => {
         </div>
         <div className="z-50 flex h-full w-full max-w-[1300px] items-center justify-center">
           <div className="flex w-fit flex-col items-end justify-center">
-            <h1 className="font-playfair text-7xl font-normal uppercase leading-[80%] sm:text-8xl md:text-9xl lg:text-[11.62rem]">
+            <h1 className="mt-4 text-center font-montserrat text-6xl font-[400] uppercase leading-[80%] text-[#FBEAD2] sm:text-7xl md:mt-8 md:text-8xl lg:text-9xl">
               Bangkok
             </h1>
           </div>

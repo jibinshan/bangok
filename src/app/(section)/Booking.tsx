@@ -17,10 +17,10 @@ const Booking = ({}) => {
           />
         </div>
         <div className="flex h-full w-full flex-col items-center gap-3 p-6 md:w-1/2 md:items-start lg:ml-24">
-          <h3 className="font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+          <h3 className="font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
             Booking
           </h3>
-          <h1 className="font-montserrat max-w-[500px] text-center text-5xl font-[400] text-[#FBEAD2] sm:text-6xl md:text-start">
+          <h1 className="max-w-[500px] text-center font-montserrat text-4xl font-[400] text-[#FBEAD2] sm:text-6xl md:text-start md:text-5xl">
             Private & <br /> Group Dining
           </h1>
           <p className="mt-4 max-w-[450px] text-center font-manrope text-sm font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:text-start">
@@ -32,7 +32,7 @@ const Booking = ({}) => {
           </p>
           <Button
             variant="outline"
-            className="group mt-4 w-fit items-center gap-[1.19rem] rounded-none border-primary bg-transparent py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-white hover:bg-primary"
+            className="group mt-4 w-fit items-center gap-[1.19rem] rounded-none border-primary bg-transparent px-6 py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-white hover:bg-primary"
           >
             <Link
               href="/table-booking"

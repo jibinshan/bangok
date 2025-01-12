@@ -10,16 +10,16 @@ import {
 import { useRestaurant } from "@/context/RestaurantContext";
 import Image from "next/image";
 
-const Reviews = ({ }) => {
+const Reviews = ({}) => {
   const { reviews } = useRestaurant();
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#070707]">
+    <section className="relative flex h-full w-full justify-center bg-[#070707] px-4 md:px-12">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-4 py-12 md:py-44">
         <div className="flex h-full w-full flex-col items-center justify-center gap-4">
-          <h3 className="font-montserrat font-400 text-center text-sm uppercase tracking-[1.98px] text-[#DCDCDC]">
+          <h3 className="font-400 text-center font-montserrat text-base uppercase tracking-[1.98px] text-[#DCDCDC]">
             Reviews
           </h3>
-          <h1 className="font-montserrat mb-6 max-w-[600px] text-center text-5xl font-[400] text-[#FBEAD2] sm:text-6xl md:mb-8">
+          <h1 className="mb-6 max-w-[600px] text-center font-montserrat text-5xl font-[400] text-[#FBEAD2] sm:text-6xl md:mb-8">
             Hear Our Guests
           </h1>
         </div>
@@ -55,7 +55,9 @@ const Reviews = ({ }) => {
                       ))}
                     </div>
                     <div className="">
-                      <p className="text-[#FBEAD2] line-clamp-5">{review.text}</p>
+                      <p className="line-clamp-5 text-[#FBEAD2]">
+                        {review.text}
+                      </p>
                     </div>
                   </CarouselItem>
                 ))}

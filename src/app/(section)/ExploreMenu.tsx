@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const ExploreMenu = ({}) => {
   return (
-    <section className="relative flex h-full w-full items-center justify-center bg-[#131313]">
+    <section className="relative flex h-full w-full items-center justify-center bg-[#131313] px-4 md:px-12">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-44">
-        <h3 className="mb-8 text-center font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+        <h3 className="mb-10 text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           explore menu
         </h3>
         <div className="relative mb-14 mt-20 flex h-full w-full flex-col justify-between gap-12 px-4 md:flex-row md:gap-20">
-          <h2 className="absolute -top-28 left-[5%] mt-5 font-montserrat text-7xl font-[400] text-[#262626] md:left-[15%] md:text-8xl">
+          <h2 className="absolute -top-32 left-[5%] mt-5 font-montserrat text-7xl font-[400] text-[#262626] md:left-[12%] md:text-[118px]">
             Bangkok
           </h2>
           <div className="z-10 mt-0 flex h-full w-full justify-center md:mt-12 md:w-1/3">
@@ -54,7 +54,7 @@ const ExploreMenu = ({}) => {
         </p>
         <Button
           variant="outline"
-          className="group mt-6 items-center gap-[1.19rem] rounded-none border-primary bg-transparent py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-[#FFF] hover:bg-primary"
+          className="group mt-6 items-center gap-[1.19rem] rounded-none border-primary bg-transparent px-6 py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-[#FFF] hover:bg-primary"
           asChild
         >
           <Link href="/menu">

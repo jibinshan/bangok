@@ -12,35 +12,35 @@ const Footer = ({}) => {
           <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/3 md:flex-row md:gap-20">
             <Button
               variant="link"
-              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2] text-accent"
+              className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2] text-accent"
               asChild
             >
               <Link href="/about-us">Menu</Link>
             </Button>
             <Button
               variant="link"
-              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
+              className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
             >
               <Link href="/contact">About</Link>
             </Button>
             <Button
               variant="link"
-              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
+              className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
             >
               <Link href="/table-booking">Contact</Link>
             </Button>
             <Button
               variant="link"
-              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
+              className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
             >
               <Link href="/about-us">Booking</Link>
             </Button>
             <Button
               variant="link"
-              className="font-400 font-montserrat w-fit items-center justify-start px-0 py-0 text-start text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
+              className="font-400 w-fit items-center justify-start px-0 py-0 text-start font-montserrat text-sm uppercase tracking-[1.08px] text-[#FBEAD2]"
               asChild
             >
               <Link href="/about-us">Gift Voucher </Link>
@@ -51,7 +51,7 @@ const Footer = ({}) => {
 
       <div className="flex w-full flex-col items-center justify-center gap-4">
         <div className="w-full">
-          <hr className="border-t-1 border-line w-full" />
+          <hr className="border-t-1 w-full border-line" />
         </div>
         <div className="mt-6 flex flex-col gap-4 md:flex-row md:gap-28">
           <div className="flex flex-col items-center justify-start gap-3">
@@ -63,7 +63,7 @@ const Footer = ({}) => {
               Allerton Rd, Liverpool L25 7RE
             </p>
           </div>
-          <hr className="bg-line hidden h-28 w-0.5 md:block" />
+          <hr className="hidden h-28 w-0.5 bg-line md:block" />
           <div className="relative flex flex-col items-center justify-center">
             <span className="font-montserrat text-sm font-[600] uppercase tracking-[1.08px] text-[#fbead2]">
               Location
@@ -93,7 +93,7 @@ const Footer = ({}) => {
               />
             </div>
           </div>
-          <hr className="bg-line hidden h-28 w-0.5 md:block" />
+          <hr className="hidden h-28 w-0.5 bg-line md:block" />
           <div className="flex flex-col items-center justify-start gap-3">
             <span className="font-montserrat text-sm font-[600] uppercase tracking-[1.08px] text-[#fbead2]">
               Opening Hours
@@ -104,7 +104,7 @@ const Footer = ({}) => {
             </p>
           </div>{" "}
         </div>
-        <div className="flex w-full flex-row items-center justify-center gap-4 md:w-1/3">
+        <div className="flex w-full flex-row items-center justify-center gap-4 md:mr-6 md:w-1/3">
           <Link href="/your-target-page" passHref>
             <Image
               src="/images/home/footer/insta.svg"
@@ -146,7 +146,7 @@ const Footer = ({}) => {
 
       <div className="flex w-full flex-col items-center justify-center">
         <div className="w-full">
-          <hr className="border-t-1 border-line w-full" />
+          <hr className="border-t-1 w-full border-line" />
         </div>
         <div className="flex h-12 w-full flex-row justify-between px-4 py-2 md:px-36">
           <div>

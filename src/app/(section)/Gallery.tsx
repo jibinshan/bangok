@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const Gallery = ({ }) => {
+const Gallery = ({}) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] pt-10 md:pt-24">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6">
-        <h3 className="text-center font-montserrat text-sm font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
+        <h3 className="text-center font-montserrat text-base font-[400] uppercase tracking-[1.98px] text-[#DCDCDC]">
           gallery
         </h3>
         <h1 className="text-center font-montserrat text-4xl font-[400] text-[#FBEAD2] md:text-5xl">
@@ -23,7 +23,7 @@ const Gallery = ({ }) => {
           />
           <div className="absolute inset-0 flex items-center justify-center px-4">
             <Button
-              className="gap-1 md:gap-[1.19rem] font-playfair font-[300] tracking-[1px] text-base md:text-xl leading-none text-white px-4 md:px-[2rem] py-8 md:py-[2.6rem]"
+              className="gap-1 px-4 py-8 text-center font-playfair text-base font-[300] leading-none tracking-[1px] text-[#FBEAD2] md:gap-[1.10rem] md:px-[2.5rem] md:py-[2.9rem] md:text-xl"
               style={{
                 borderRadius: "10rem",
                 border: "1px solid, #BC995D",
@@ -33,7 +33,7 @@ const Gallery = ({ }) => {
               asChild
             >
               <Link href="https://www.instagram.com/bavettesteakhouse/">
-                <Icons.instagram className="text-primary w-8 h-8 md:w-11 md:h-11" />
+                <Icons.instagram className="h-8 w-8 text-primary md:h-11 md:w-11" />
                 Check out our instagram
               </Link>
             </Button>
