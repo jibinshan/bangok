@@ -113,7 +113,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <div className="z-50 flex w-full flex-col items-center gap-4">
+      <div className="z-50 flex w-full flex-col items-center gap-0">
         <div className="embla-menu">
           <div className="embla-menu__viewport" ref={emblaRef}>
             <div className="embla-menu__container">
@@ -140,7 +140,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           </div>
         </div>
         <div className="relative flex h-auto w-full items-center justify-end gap-2 px-10 md:px-64">
-          <div className="absolute left-1/2 flex -translate-x-1/2 transform items-center gap-6">
+          <div className="absolute left-1/2 flex -translate-x-1/2 transform items-start gap-6">
             <PrevButton
               onClick={onPrevButtonClick}
               disabled={prevBtnDisabled}
@@ -175,9 +175,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             </p>
           </div> */}
         </div>
-        <h1 className="absolute inset-0 left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-[50%] transform items-center justify-center font-playfair text-[7rem] text-[#131313] md:text-[10rem]">
-          Special
-        </h1>
       </div>
     </>
   );

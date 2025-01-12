@@ -67,7 +67,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
       variant="outline"
       size="icon"
       className={cn(
-        "group/btn h-8 w-8 rounded-full border-0 border-primary text-foreground hover:bg-primary",
+        "group/btn h-12 w-12 rounded-full border-0 border-primary text-foreground hover:bg-primary",
         "-left-12 top-1/2 -translate-y-1/2",
       )}
       {...restProps}
@@ -95,7 +95,7 @@ export const NextButton: React.FC<PropType> = (props) => {
       variant="outline"
       size="icon"
       className={cn(
-        "group/btn h-8 w-8 rounded-full border-0 border-primary text-foreground hover:bg-primary",
+        "group/btn h-12 w-12 rounded-full border-0 border-primary text-foreground hover:bg-primary",
         "-right-12 top-1/2 -translate-y-1/2",
       )}
       {...restProps}

@@ -10,7 +10,7 @@ import {
 import { useRestaurant } from "@/context/RestaurantContext";
 import Image from "next/image";
 
-const Reviews = ({}) => {
+const Reviews = ({ }) => {
   const { reviews } = useRestaurant();
   return (
     <section className="relative flex h-full w-full justify-center bg-[#070707]">
@@ -55,7 +55,7 @@ const Reviews = ({}) => {
                       ))}
                     </div>
                     <div className="">
-                      <p className="text-[#FBEAD2]">{review.text}</p>
+                      <p className="text-[#FBEAD2] line-clamp-5">{review.text}</p>
                     </div>
                   </CarouselItem>
                 ))}

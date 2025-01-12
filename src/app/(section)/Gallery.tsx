@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const Gallery = ({}) => {
+const Gallery = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] pt-10 md:pt-24">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6">
@@ -23,17 +23,17 @@ const Gallery = ({}) => {
           />
           <div className="absolute inset-0 flex items-center justify-center px-4">
             <Button
-              className="gap-[1.19rem] font-playfair text-lg text-white lg:px-[2rem] lg:py-[2.6rem]"
+              className="gap-1 md:gap-[1.19rem] font-playfair font-[300] tracking-[1px] text-base md:text-xl leading-none text-white px-4 md:px-[2rem] py-8 md:py-[2.6rem]"
               style={{
                 borderRadius: "10rem",
                 border: "1px solid, #BC995D",
                 background: "rgba(7, 7, 7, 0.26)",
-                backdropFilter: "blur(17px)",
+                backdropFilter: "blur(12px)",
               }}
               asChild
             >
               <Link href="https://www.instagram.com/bavettesteakhouse/">
-                <Icons.instagram className="text-primary" />
+                <Icons.instagram className="text-primary w-8 h-8 md:w-11 md:h-11" />
                 Check out our instagram
               </Link>
             </Button>
