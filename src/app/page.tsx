@@ -26,7 +26,7 @@ export default function HomePage() {
         {/* <AboutUs /> */}
         <Footer />
       </div>
-      <div className="fixed bottom-2 right-2 hidden md:flex">
+      <div className="fixed bottom-2 right-2">
         <ViewMenu />
       </div>
     </main>
