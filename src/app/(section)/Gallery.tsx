@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const Gallery = ({}) => {
+const Gallery = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] pt-10 md:pt-24">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6">
@@ -14,13 +14,57 @@ const Gallery = ({}) => {
           A Glimpse of Bangkok
         </h1>
         <div className="relative mt-4 h-full w-full md:mt-16">
-          <Image
-            src="/images/home/gallery/gallery.png"
-            alt="gallery"
-            className="h-full w-full object-cover"
-            width={1920}
-            height={980}
-          />
+          <div className="w-full h-full grid grid-cols-3">
+            <Image
+              src="/images/home/gallery/1.png"
+              alt="gallery"
+              className="h-full w-full row-span-2"
+              width={626}
+              height={652}
+            />
+            <Image
+              src="/images/home/gallery/2.png"
+              alt="gallery"
+              className="h-full w-full row-span-2"
+              width={626}
+              height={652}
+            />
+            <Image
+              src="/images/home/gallery/3.png"
+              alt="gallery"
+              className="h-full w-full"
+              width={602}
+              height={334}
+            />
+            <Image
+              src="/images/home/gallery/4.png"
+              alt="gallery"
+              className="h-full w-full"
+              width={602}
+              height={318}
+            />
+            <Image
+              src="/images/home/gallery/5.png"
+              alt="gallery"
+              className="h-full w-full"
+              width={602}
+              height={328}
+            />
+            <Image
+              src="/images/home/gallery/6.png"
+              alt="gallery"
+              className="h-full w-full"
+              width={602}
+              height={328}
+            />
+            <Image
+              src="/images/home/gallery/7.png"
+              alt="gallery"
+              className="h-full w-full"
+              width={602}
+              height={328}
+            />
+          </div>
           <div className="absolute inset-0 flex items-center justify-center px-4">
             <Button
               className="gap-1 px-4 py-8 text-center font-playfair text-base font-[300] leading-none tracking-[1px] text-[#FBEAD2] md:gap-[1.10rem] md:px-[2.5rem] md:py-[2.9rem] md:text-xl"
