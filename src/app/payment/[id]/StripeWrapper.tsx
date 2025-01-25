@@ -1,9 +1,9 @@
 "use client";
-import { useRestaurant } from "@/context/RestaurantContext";
 import React, { useEffect, useState, type FC } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js/pure";
 import type { Stripe } from "@stripe/stripe-js";
+import { useRestaurant } from "@/context/RestaurantContext";
 
 const StripeWrapper: FC<{
   children: React.ReactNode;
@@ -15,7 +15,7 @@ const StripeWrapper: FC<{
   useEffect(() => {
     const fetchStripeObject = async () => {
       // If there is no accountId, do not run the loadStripe function.
-      if (restaurant?.paymentInfo.destinationAccountId) {
+      if (restaurant?.paymentInfo?.destinationAccountId) {
         const res = await loadStripe(stripePublishableKey, {
           stripeAccount: restaurant.paymentInfo.destinationAccountId,
         });

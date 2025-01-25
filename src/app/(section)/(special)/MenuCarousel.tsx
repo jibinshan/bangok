@@ -7,6 +7,7 @@ import {
 import { useDotButton } from "@/app/(section)/(special)/MenuDotButton";
 import "@/app/(section)/(special)/embla-menu.css";
 import ModelBox from "@/components/ModelBox";
+import type { ModelData } from "@/types/model-data.type";
 import type {
   EmblaCarouselType,
   EmblaEventType,
@@ -21,7 +22,7 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 type PropType = {
-  slides: { modelUrl: string; price: string; name: string }[];
+  slides: ModelData[];
   options?: EmblaOptionsType;
 };
 
@@ -121,7 +122,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 <div className="embla-menu__slide" key={index}>
                   <div className="embla-menu__slide__number h-full w-full">
                     <ModelBox
-                      src={item.modelUrl}
+                      src={item.modelPath.glb}
                       width="400px"
                       height="400px"
                       cameraOrbit="0deg 40deg 0deg 5m"

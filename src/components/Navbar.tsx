@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Sidebar from "./SideBar";
-import CartSheet from "@/components/cart/CartSheet";
-import { BetaMenuActive } from "@/lib/constants";
+// import { BetaMenuActive } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
@@ -111,7 +110,7 @@ const Navbar = ({
               </Link>
             </Button>
           </div>
-          {isScrolled && (
+          {/* {isScrolled && (
             <div className="hidden items-center justify-center gap-[2.5rem] lg:flex">
               {pathname !== "/" && (
                 <CartSheet>
@@ -126,7 +125,7 @@ const Navbar = ({
                 </CartSheet>
               )}
             </div>
-          )}
+          )} */}
         </div>
       </div>
       <div className="flex lg:hidden">
