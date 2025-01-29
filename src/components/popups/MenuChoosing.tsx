@@ -31,7 +31,7 @@ const MenuChoosing: FC<MenuChoosingProps> = ({ children, item }) => {
                     <p className="text-menusecondary">Repeat previous customisation?</p>
                 </DialogHeader>
                 <div className="px-5">
-                    <div className="rounded-xl bg-menuforeground px-5 py-6">
+                    <div className="rounded-xl bg-itembackground px-5 py-6">
                         <p className="flex items-center justify-start gap-1 font-manrope text-menusecondary text-sm">
                             {item.name}:&nbsp;
                             {modifiers?.map((mod) => {
@@ -44,12 +44,12 @@ const MenuChoosing: FC<MenuChoosingProps> = ({ children, item }) => {
                 <DialogFooter>
                     <div className="flex w-full items-center justify-center gap-4 px-5 py-5">
                         <Link href={`/menu/${item._id}`} className="hidden md:block md:w-1/2">
-                            <Button variant="outline" onClick={() => setOpen(false)} className="w-full text-menusecondary">
+                            <Button variant="outline" onClick={() => setOpen(false)} className="w-full text-menuprimary border-[1px] bg-transparent border-menuprimary hover:bg-buttonhover">
                                 I&apos;ll Choose
                             </Button>
                         </Link>
                         <MenuItemDrawer item={item} setChoose={setOpen}>
-                            <Button variant="outline" className="w-1/2 text-menusecondary md:hidden">
+                            <Button variant="outline" className="w-1/2 text-menuprimary border-[1px] bg-transparent border-menuprimary hover:bg-buttonhover md:hidden">
                                 I&apos;ll Choose
                             </Button>
                         </MenuItemDrawer>
@@ -68,7 +68,7 @@ const MenuChoosing: FC<MenuChoosingProps> = ({ children, item }) => {
                     </div>
                 </DialogFooter>
             </DialogContent>
-        </Dialog >
+        </Dialog>
     );
 };
 

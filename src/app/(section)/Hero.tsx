@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Hero = ({}) => {
+const Hero = ({ }) => {
   return (
     <section id="hero" className="flex w-full items-center justify-center">
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
@@ -13,7 +13,7 @@ const Hero = ({}) => {
             loop
             muted
             playsInline
-            poster="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-preview.jpg"
+            poster="/images/bangkok-poster.jpg"
           ></video>
         </div>
         <div className="z-50 flex h-full w-full max-w-[1300px] items-center justify-center">

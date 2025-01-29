@@ -66,38 +66,15 @@ const Reviews = ({ }) => {
 
     })
 
-    const splitType = document.querySelectorAll(".head-review")
-    splitType.forEach((char, i) => {
-      if (char instanceof HTMLElement) {
-        const text = new SplitType(char, { types: "chars" })
-        gsap.from(text.chars, {
-          scrollTrigger: {
-            trigger: char,
-            start: 'top 80%',
-            end: 'top 20%',
-            scrub: true,
-            markers: false
-          },
-          opacity: 0.2,
-          stagger: 0.4
-        })
-      }
-    })
-
   }, [])
 
   const text = "our clients say"
   return (
     <section className="relative flex h-full w-full justify-center bg-transparent">
       <div className="absolute w-full h-full left-0 top-0 hidden md:flex justify-center items-start">
-        <div className="w-full h-full max-w-[1360px] border-x-[1px] border-x-primary z-30"></div>
+        <div className="w-full h-full max-w-[1360px] z-30"></div>
       </div>
-      <div className="lines">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+
       <div className="flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-4 py-12 pb-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <p className="review-one font-stone font-[200] text-xl text-primary md:-ml-[50px]">
@@ -124,20 +101,14 @@ const Reviews = ({ }) => {
           </p>
         </div>
         <div className="flex w-full items-center justify-center p-4">
-          <Carousel className="w-full md:w-[1100px]">
+          <Carousel className="w-full md:w-[1300px]">
             <CarouselContent className="">
               {reviews?.map((review, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 flex justify-center">
                   <div className="w-full flex flex-col px-3 gap-2">
                     <div className="relative w-full py-4 px-4 md:h-[300px] flex flex-col gap-3 justify-center items-center">
                       <div
-                        className="absolute w-full h-full hidden md:flex left-0 top-0 z-10"
-                        style={{
-                          backgroundImage: "url('/images/review.svg')",
-                          backgroundSize: "100%",
-                          backgroundRepeat: "no-repeat"
-                        }}
-                      />
+                        className="absolute w-full h-full hidden md:flex left-0 top-0 z-10" />
                       <div className="flex w-full justify-center z-20">
                         <Icons.star key={index} className="text-primary" />
                         <Icons.star key={index} className="text-primary" />

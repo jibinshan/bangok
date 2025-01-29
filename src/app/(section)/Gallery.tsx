@@ -76,9 +76,9 @@ const Gallery = ({ }) => {
               }}
               asChild
             >
-              <Link href="https://www.instagram.com/bavettesteakhouse/">
-                <Icons.instagram className="h-8 w-8 text-primary md:h-11 md:w-11" />
-                Check out our instagram
+              <Link href="https://www.facebook.com/p/Bangkok-7-Thai-Restaurant-100063544841226/">
+                <Icons.facebook className="h-8 w-8 text-primary md:h-11 md:w-11" />
+                Check out our Facebook
               </Link>
             </Button>
           </div>

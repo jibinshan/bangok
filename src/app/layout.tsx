@@ -5,11 +5,11 @@ import { Manrope, Montserrat, Playfair_Display } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Bangkok | Restaurent",
-  description: "Bangkok",
+  title: "Bangkok 7 Thai Restaurant | Authentic Thai Cuisine in Kendal",
+  description: "Discover Bangkok 7 Thai Restaurant in Kendal&comma; offering a cozy ambiance and a menu of authentic Thai dishes&comma; including curries&comma; stir-fries&comma; and noodles&period; Perfect for casual dining or special occasions&comma; with vegetarian&comma; vegan&comma; and gluten-free options available&period;",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   keywords:
-    "Bangkok, Best steak house Liverpool, beef steak Liverpool, fine dining Liverpool, steak restaurant Woolton Village, Bangkok menu, premium steaks, signature steaks, curated wines, group dining Liverpool",
+    "Bangkok 7 Thai Restaurant&comma; Thai cuisine Kendal&comma; authentic Thai food&comma; best Thai restaurant Kendal&comma; Thai curries&comma; stir-fries&comma; noodles&comma; vegan Thai options&comma; gluten-free Thai dishes&comma; dining in Kendal&comma; Thai food Lake District&comma; Kendal restaurants&comma; cozy Thai dining",
 };
 
 const montserrat = Montserrat({

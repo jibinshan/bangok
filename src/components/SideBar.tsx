@@ -39,9 +39,9 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               )}
               asChild
             >
-              <Link href="/menu" className="flex gap-2 py-6">
+              {/* <Link href="/menu" className="flex gap-2 py-6">
                 <Dock /> <span>Menu</span>
-              </Link>
+              </Link> */}
             </Button>
             <Button
               asChild
@@ -67,10 +67,10 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               className="flex w-full justify-start border-b-[1px] border-b-gray-800 p-0 px-1 uppercase text-accent text-white"
             >
               <Link href="/table-booking" className="flex gap-2 py-6">
-                <BookCheck /> <span>Booking</span>{" "}
+                <BookCheck /> <span>Table Booking</span>{" "}
               </Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               variant="link"
               className="flex w-full justify-start p-0 uppercase text-accent text-white"
@@ -78,7 +78,7 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
               <Link href="/gift-voucher" className="flex gap-2 py-6">
                 <Gift /> <span>Gift Voucher</span>
               </Link>
-            </Button>
+            </Button> */}
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

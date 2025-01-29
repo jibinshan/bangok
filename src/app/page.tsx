@@ -11,24 +11,24 @@ import Navbar from "@/components/Navbar";
 import AboutUs from "./(section)/AboutUs";
 
 export default function HomePage() {
-  return (
-    <main className="relative flex h-full w-full">
-      <div className="flex h-full w-full flex-col items-center justify-center">
-        <Navbar position="fixed" />
-        <Hero />
-        <AboutUs />
-        <ExploreMenu />
-        <WeOffer />
-        <Special />
-        <Booking />
-        <Reviews />
-        <Gallery />
-        {/* <AboutUs /> */}
-        <Footer />
-      </div>
-      <div className="fixed bottom-2 right-2">
-        <ViewMenu />
-      </div>
-    </main>
-  );
+    return (
+        <main className="relative flex h-full w-full">
+            <div className="flex h-full w-full flex-col items-center justify-center">
+                <Navbar position="fixed" />
+                <Hero />
+                <Special />
+                <AboutUs />
+                <ExploreMenu />
+                <WeOffer />
+                <Booking />
+                <Reviews />
+                <Gallery />
+                {/* <AboutUs /> */}
+                <Footer />
+            </div>
+            <div className="fixed bottom-2 right-2 flex md:bottom-[54px] md:right-[44px]">
+                <ViewMenu />
+            </div>
+        </main>
+    );
 }

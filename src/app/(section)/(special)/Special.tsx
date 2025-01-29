@@ -13,9 +13,9 @@ const Special = ({ }) => {
       <div className="relative flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
         <div className="absolute right-16 top-24 hidden md:block">
           <p className="font-manrope text-base font-[300] tracking-[0.54px] text-[#C1B6A6]">
-            Bavette was born from a passion for <br /> bringing the finest cuts
-            of beef to the <br /> table, with a commitment to <br />{" "}
-            sustainability.
+            Bangkok7 was born from a passion for <br /> bringing the finest thai
+            food to the <br /> table, with a commitment to <br />{" "}
+            sustainabile ingredients.
           </p>
         </div>
         <div className="absolute -top-32 left-2 md:-top-10 md:left-32">

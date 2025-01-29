@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WeOffer = ({}) => {
+const WeOffer = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#070707] px-4 md:px-12">
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 py-8 md:py-24">
@@ -11,10 +11,7 @@ const WeOffer = ({}) => {
           Unforgettable Dining Experience
         </h1>
         <p className="mt-6 max-w-[600px] px-2 text-center font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
-          Bavette was born from a passion for bringing the finest cuts of beef
-          to the table, with a commitment to sustainability and premium quality.
-          Every dish is a labor of love, crafted by our experienced chefs who
-          handpick each cut to ensure perfection.
+          At Bangkok 7 Thai Restaurant, enjoy an inviting dining experience with a cozy atmosphere, friendly service, and authentic Thai flavors. Whether a casual meal or a special occasion, the warm ambiance and vibrant dishes ensure a memorable visit for all.
         </p>
         <div className="grid-cols- grid w-full pt-4 md:grid-cols-3 md:pt-[8.3rem]">
           <div className="group relative h-auto w-full transition-all duration-300 ease-in-out">

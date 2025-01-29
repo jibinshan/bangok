@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const ExploreMenu = ({}) => {
+const ExploreMenu = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#131313] px-4 md:px-12">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-16 md:py-44">
@@ -46,18 +46,15 @@ const ExploreMenu = ({}) => {
           </h2>
         </div>
         <p className="max-w-[600px] px-2 text-center font-manrope font-[300] leading-[160%] tracking-[0.54px] text-[#C1B6A6] md:px-0">
-          Bangkok was born from a love of bringing the finest cuts of beef to
-          London’s table, rooted in a commitment to sustainability and unmatched
-          quality. Each dish is a true labor of passion, crafted by our expert
-          chefs who hand-select every cut to guarantee perfection.
+          Bangkok 7 Thai Restaurant&apos;s menu features a delightful array of authentic Thai dishes&comma; including aromatic curries&comma; stir-fries&comma; noodles&comma; and fresh salads&period; Each dish is crafted with high-quality ingredients and bold flavors&comma; offering vegetarian&comma; vegan&comma; and gluten-free options&period;
         </p>
         <Button
           variant="outline"
           className="group mt-6 items-center gap-[1.19rem] rounded-none border-primary bg-transparent px-6 py-7 font-manrope text-sm font-[600] uppercase tracking-[1.96px] text-[#FFF] hover:bg-primary"
           asChild
         >
-          <Link href="/menu">
-            View Menu
+          <Link href="/table-booking">
+            Table Booking
             <Icons.rightArrow className="text-primary duration-300 ease-in-out group-hover:translate-x-1 group-hover:text-primary-foreground" />
           </Link>
         </Button>

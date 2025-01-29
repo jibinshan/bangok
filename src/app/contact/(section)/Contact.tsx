@@ -29,7 +29,7 @@ const FormValidation = z.object({
 
 type FormData = z.infer<typeof FormValidation>;
 
-const Contact = ({}) => {
+const Contact = ({ }) => {
   const form = useForm<FormData>({
     resolver: zodResolver(FormValidation),
     defaultValues: {
@@ -96,7 +96,7 @@ const Contact = ({}) => {
                     asChild
                     className="px-1 py-1 hover:bg-transparent"
                   >
-                    <Link href="https://www.tripadvisor.com/Restaurant_Review-g186337-d23660134-Reviews-or30-Bavette_Steak_House_Liverpool-Liverpool_Merseyside_England.html">
+                    <Link href="https://www.tripadvisor.in/Restaurant_Review-g186326-d14083651-Reviews-Bangkok_7_Thai_Restaurant-Kendal_Lake_District_Cumbria_England.html">
                       <span className="sr-only">Trip Advisor</span>
                       <Icons.tripAdvisor className="hover:text-white" />
                     </Link>
@@ -106,7 +106,7 @@ const Contact = ({}) => {
                     asChild
                     className="px-1 py-1 hover:bg-transparent"
                   >
-                    <Link href="https://g.co/kgs/3rHehs1">
+                    <Link href="https://maps.app.goo.gl/dV3AyMtqMcjDxwrM9">
                       <span className="sr-only">Google</span>
                       <Icons.google className="hover:text-white" />
                     </Link>
@@ -116,7 +116,7 @@ const Contact = ({}) => {
                     asChild
                     className="px-1 py-1 hover:bg-transparent"
                   >
-                    <Link href="https://www.facebook.com/bavettesteakhouse/">
+                    <Link href="https://www.facebook.com/profile.php?id=100063544841226">
                       <span className="sr-only">Facebook</span>
                       <Icons.facebook className="hover:text-white" />
                     </Link>
@@ -138,11 +138,7 @@ const Contact = ({}) => {
                   <div className="flex flex-col gap-2">
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
-                      <span>12 PM - 10:30 PM</span>
-                    </p>
-                    <p className="flex gap-7 text-[#b3b3aa]">
-                      <span>:</span>
-                      <span>12 PM - 10:30 PM</span>
+                      <span>12:00 PM - 10:30 PM</span>
                     </p>
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
@@ -150,19 +146,23 @@ const Contact = ({}) => {
                     </p>
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
-                      <span>4 PM - 10:30 PM</span>
+                      <span>12:00 PM - 10:00 PM</span>
                     </p>
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
-                      <span>4 PM - 10:30 PM</span>
+                      <span>12:00 PM - 10:00 PM</span>
                     </p>
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
-                      <span>4 PM - 10:30 PM</span>
+                      <span>12:00 PM - 10:00 PM</span>
                     </p>
                     <p className="flex gap-7 text-[#b3b3aa]">
                       <span>:</span>
-                      <span>12 PM - 10:30 PM</span>
+                      <span>12:00 PM - 10:00 PM</span>
+                    </p>
+                    <p className="flex gap-7 text-[#b3b3aa]">
+                      <span>:</span>
+                      <span>12:00 PM - 10:30 PM</span>
                     </p>
                   </div>
                 </div>
@@ -179,11 +179,11 @@ const Contact = ({}) => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p>
-                    49 Allerton Rd, Liverpool L25
+                    24 Finkle St, Kendal LA9 4AB,
                     <br />
-                    7RE Bangkok
+                    United Kingdom
                   </p>
-                  <Link href="https://maps.app.goo.gl/cQSqpbwsCze8TgcF7">
+                  <Link href="https://maps.app.goo.gl/dV3AyMtqMcjDxwrM9">
                     <p className="flex gap-2 text-sm text-[#b3b3aa]">
                       <span>Get Direction</span>
                       <MoveRight />
@@ -198,12 +198,12 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:441539733733">
-                    <p>+ 441539733733</p>
+                  <Link href="tel:+441539733733">
+                    <p>+44 1539 733733</p>
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center gap-6">
+              {/* <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full bg-[#0f0f0f] p-2">
                     <Mail className="text-[#b7955b]" />
@@ -214,7 +214,7 @@ const Contact = ({}) => {
                     <p>info@Bangkok.co.uk</p>
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="w-full px-3 lg:w-3/5 lg:px-0">
               <Form {...form}>
@@ -318,12 +318,12 @@ const Contact = ({}) => {
         </div>
         <div className="h-[500px] w-full max-w-[1300px] px-4 md:px-0">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.433514988319!2d-2.8691135!3d53.3742071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b1f31e8b7489b%3A0xcec4ec7d21dc88df!2sBavette%20Steakhouse!5e1!3m2!1sen!2sin!4v1731058857722!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2326.643923469354!2d-2.7463418!3d54.327926100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487c8def6e21dcb1%3A0xfb99d1a4102eb486!2sBangkok%207%20Thai%20Restaurant!5e0!3m2!1sen!2sin!4v1736684327888!5m2!1sen!2sin"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="h-[500px] w-full"
+            className="h-[500px] w-full grayscale invert"
           ></iframe>
         </div>
       </div>

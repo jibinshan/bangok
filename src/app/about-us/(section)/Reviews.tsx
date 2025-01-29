@@ -61,7 +61,7 @@ const Reviews = ({ }) => {
                       ))}
                     </div>
                     <div className="">
-                      <p className="text-[#FBEAD2]">{review.text}</p>
+                      <p className="text-[#FBEAD2] line-clamp-6">{review.text}</p>
                     </div>
                   </CarouselItem>
                 ))}

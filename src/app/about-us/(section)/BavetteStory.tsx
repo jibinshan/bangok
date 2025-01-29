@@ -1,7 +1,9 @@
+import { Icons } from "@/components/Icon";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import Image from "next/image";
 
-const BavetteStory = ({}) => {
+const BavetteStory = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center p-4 lg:py-16">
       <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#050505]">
@@ -22,28 +24,23 @@ const BavetteStory = ({}) => {
           </div>
           <div className="flex h-full w-full flex-col items-center gap-[2.5rem] p-6 md:w-1/2 md:items-start lg:ml-24">
             <h1 className="max-w-[500px] text-center font-playfair text-6xl sm:text-7xl md:text-start">
-              From Dream
-              <br />
-              to Sizzle
+              Bangkok Restaurant: <br />Thai Flavors
             </h1>
             <p className="max-w-[450px] text-center font-light leading-[160%] text-[#C1B6A6] md:text-start">
-              What began as a dream between two food-loving friends quickly
-              turned into a landmark for steak enthusiasts. In 2010, founders
-              Alex and James combined their love of gourmet dining with a single
-              mission: to create a place where steak isn`t just a meal but a
-              celebration. From humble beginnings in a small kitchen to becoming
-              a renowned steakhouse, Bavette has never lost its roots in
-              quality, craftsmanship, and a love for the community.
+              Bangkok Restaurant was established to bring the vibrant essence of Thai cuisine to diners across the Kendal. Inspired by Thailand’s bustling street food culture and rich culinary heritage, the restaurant preserves the authenticity of traditional recipes while infusing a modern twist. Each dish is crafted with passion, using fresh, high-quality ingredients to capture the bold, aromatic flavors that define Thai food.
               <br />
               <br />
-              Each cut, carefully selected and perfectly prepared, tells the
-              story of years spent honing our craft. And while we`ve grown over
-              the years, our mission remains the same—to deliver the finest
-              steak experience in every bite.
+              Bangkok Restaurant offers more than just a meal—it’s a gateway to Thailand’s culinary soul. From the warm, inviting atmosphere to the meticulously curated menu, every element reflects the charm and vibrancy of Bangkok. With a dedication to delivering an authentic and unforgettable dining experience, the restaurant has become a favorite destination for UK food lovers seeking a true taste of Thailand.
             </p>
-            <Button variant="outline" className="px-6 py-6">
-              Book Table
-            </Button>
+            <Link href='/table-booking'>
+              <Button
+                variant="outline"
+                className="group w-fit items-center gap-[1.19rem] border-primary bg-transparent px-6 py-6 font-semibold uppercase text-white hover:bg-primary"
+              >
+                Table Booking{" "}
+                <Icons.rightArrow className="text-primary duration-300 ease-in-out group-hover:translate-x-1 group-hover:text-primary-foreground" />
+              </Button>
+          </Link>
           </div>
         </div>
       </div>

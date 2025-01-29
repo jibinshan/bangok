@@ -43,7 +43,7 @@ const MenuItemMinus: FC<MenuChoosingProps> = ({ children, item }) => {
                 </div>
                 <DialogFooter>
                     <div className="flex w-full items-center justify-center gap-4 px-5 py-5">
-                        <Button variant="outline" onClick={() => setOpen(false)} className="w-1/2 text-menusecondary md:hidden">
+                        <Button variant="outline" onClick={() => setOpen(false)} className="w-1/2 text-menuprimary bg-transparent border-[1px] border-menuprimary hover:bg-buttonhover md:hidden">
                             Cancel
                         </Button>
 

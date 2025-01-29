@@ -1,10 +1,10 @@
 "use client";
 
-const TableBooking = ({}) => {
+const TableBooking = ({ }) => {
   return (
     <div className="flex h-full w-full max-w-[1300px] items-center justify-center gap-[1.2rem] py-12">
       <iframe
-        src="https://booking.resdiary.com/widget/Standard/MoorishTurkishCuisine/55571"
+        src="https://booking.resdiary.com/widget/Standard/Bangkok7Thai/6809"
         style={{ width: "100%", height: "620px" }}
       ></iframe>
     </div>

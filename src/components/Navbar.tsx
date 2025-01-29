@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Sidebar from "./SideBar";
+// import CartSheet from "@/components/cart/CartSheet";
 // import { BetaMenuActive } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
@@ -32,9 +33,9 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-0 z-50 flex w-full items-center justify-center px-4 lg:ml-4 lg:px-[130px] lg:pb-5`,
+        `${position} top-0 z-50 flex w-full items-center justify-center px-4 lg:px-[130px] lg:pb-5`,
         isScrolled && "bg-black",
-        pathname !== "/" && "bg-black",
+        pathname !== "/" && "bg-transparent",
       )}
     >
       <Link href="/" className="flex lg:hidden">
@@ -54,12 +55,22 @@ const Navbar = ({
       >
         <div className="flex h-full w-full items-center justify-between lg:justify-center xl:ml-36">
           <div className="hidden flex-row items-center justify-center gap-[3.80rem] lg:mt-8 lg:flex 2xl:gap-[5.88rem]">
+          <Link href="/">
+              <Image
+                src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
+                width={160}
+                height={100}
+                alt="logo"
+                className="h-20 w-32"
+              />
+            </Link>
+            
             <Button
               asChild
               variant="link"
               className="px-0 uppercase text-accent"
             >
-              <Link href="/menu">Menu</Link>
+              <Link href="/">Home</Link>
             </Button>
             <Button
               asChild
@@ -76,37 +87,29 @@ const Navbar = ({
               <Link href="/contact">Contact</Link>
             </Button>
 
-            <Link href="/">
-              <Image
-                src="https://foodo-web-videos.s3.eu-west-2.amazonaws.com/bangkok-logo.png"
-                width={160}
-                height={100}
-                alt="logo"
-                className="h-20 w-32"
-              />
-            </Link>
+            
 
-            <Button
+            {/* <Button
               asChild
               variant="link"
               className="px-0 uppercase text-accent"
             >
-              <Link href="/table-booking">Booking</Link>
-            </Button>
-            <Button
+              <Link href="/table-booking">Table &nbsp; Booking</Link>
+            </Button> */}
+            {/* <Button
               asChild
               variant="link"
               className="flex items-start justify-center px-0 uppercase text-accent"
             >
               <Link href="/gift-voucher">Gift Voucher</Link>
-            </Button>
+            </Button> */}
             <Button
-              className="group items-center rounded-none bg-primary px-6 py-6 font-montserrat text-sm font-[600] uppercase tracking-[1.86px] text-[#282828] hover:bg-primary"
+              className="group items-center rounded-none bg-[#fed728] px-6 py-6 font-montserrat text-sm font-[600] uppercase tracking-[1.86px] text-[#282828] hover:bg-[#fed728]"
               variant="secondary"
               asChild
             >
-              <Link href="/menu" className="text-sm">
-                View Menu
+              <Link href="/table-booking" className="text-sm">
+                Table Booking
               </Link>
             </Button>
           </div>
@@ -135,7 +138,7 @@ const Navbar = ({
               variant="ghost"
               className="flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
             >
-              <span className="sr-only">Menu</span>
+              <span className="sr-only">Table Booking</span>
               <Icons.menu />
             </Button>
           </Sidebar>
@@ -145,7 +148,7 @@ const Navbar = ({
               variant="ghost"
               className="px-1 py-1 text-primary hover:bg-transparent hover:text-primary lg:hidden"
             >
-              <span className="sr-only">Menu</span>
+              <span className="sr-only">Table Booking</span>
               <Icons.menu />
             </Button>
           </Sidebar>
